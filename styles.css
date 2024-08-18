@@ -1,0 +1,218 @@
+body, h1, h2, p, ul, li, form, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    line-height: 1.6;
+    margin: 0;
+    font-family: "Raleway", "Helvetica", "Arial", sans-serif;
+}
+
+ul{
+    margin: 0;
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.header, .footer{
+    height: 100%;
+    padding: 0 20px;
+    background-image: url(image/TreeKnot.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    background-attachment: fixed;
+}
+
+.nav{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.header::after{
+    content: "";
+    background: rgba(41, 39, 39, 0.719);
+    position: fixed;
+    opacity: .85;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: all .25s ease;
+}
+
+.logo-link{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+
+.logo-img{
+    height: 80px;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li {
+    padding: 0 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.nav-list li:last-child a{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    padding: 0 10px;
+    background-color: #d49f6a;
+    border-radius: 3px;
+}
+
+.nav-list li:last-of-type{
+    padding: 0;
+}
+
+.nav-list li:last-child a:hover{
+    display: flex;
+    align-items: center;
+    background-color: #774b24;
+    transition: all .25s ease;
+}
+
+.nav-list-link{
+    position: relative;
+    transition: all .25s ease;
+}
+
+.nav-list-link::after{
+    align-items: center;
+    content: "";
+    background: #d49f6a;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    transform: scaleX(0);
+    transition: all .25s ease;
+}
+
+.nav-list-link:hover{
+    color: #d49f6a;
+}
+
+.nav-list-link:hover::after{
+    transform: scaleX(1);
+}
+
+.main{
+    position: relative;
+    background: rgb(196, 171, 171);
+    width: 100%;
+}
+
+.intro {
+    padding: 60px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    padding: 220px 150px;
+    gap: 20px;
+}
+
+.grid-item {
+    background: #9bdad6;
+ 
+    text-align: center;
+    border: 1px solid #d49f6a;
+    transition: all .25s ease;
+    border-radius: 8px;
+}
+
+.grid-item a{
+    display: inline-block;
+    padding: 20px;
+}
+
+.grid-item:hover{
+    transform: scale(1.1);
+}
+
+.grid-item-products{
+    background: #9bdad6;
+    text-align: center;
+    border: 1px solid #d49f6a;
+    transition: all .25s ease;
+    border-radius: 8px;
+}
+
+.grid-item-products:hover{
+    transform: scale(1.1);
+}
+
+.footer{
+    height: 200px;
+    
+}
+
+.footer-info{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    color: white;
+}
+
+.footer-info-size{
+    width: 500px;
+}
+
+.products-img{
+    height: 120px;
+    padding: 5px;
+}
+
+.about {
+    padding: 220px 150px;
+}
+
+.about h2, h1{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about p{
+    margin-bottom: 40px;
+}
+.info{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.main_contact{
+    padding: 220px 150px;
+}
